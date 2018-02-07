@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="angular.js"></script>
+            
+    <body>
+        <div ng-app="myapp" ng-controller="myCtrl">
+        <h1>Noida Institute Of Engineering And Technology</h1>
+        <h2>Registrstion Form</h2>
+    
+        <p>First Name: <input type="text" ng-model="FirstName" placeholder="Your First Name"</p>
+        <p>Last Name : <input type="text" ng-model="LastName" placeholder="Your Last Name"</p>
+        <P>D. O. B   : <input type="text" ng-model=   "D. O. B" placeholder="Your D.O.B"</P>
+        <p>contect Number: <input type="text" ng-model="Contect Number" placeholder="Your Contect Number"</p>
+        <p>Password: <input type="Password" ng-model="User.password" placeholder="Your Password"</p>
+        <p>Confirm-Password: <input type="password" ng-model="Confirm-Password" placeholder="Confirm-password"</p>
+        <p>E-mail ID : <input type="text" ng-model="E-mail ID" placeholder="Your E-mail ID"</p>
+        <p>Student ID: <input type="text"ng-model="Student ID" placeholder="Student ID"</p>
+        <p>List Of Subject: <input type="text"ng-model="List Of Subjects" placeholder="Choose Your Subject"</p>
+        <select name="type"ng-model="subject.name"ng-dropdown required ng-change="changeme()">
+            <option ng-option value="menu">menu</option>
+            <option ng-option value="Math101">Math101</option>
+            <option ng-option value="DAA102">DAA102</option>
+            <option ng-option value="PPL103">ppl103</option>
+            <option ng-option value="DBMS104">DBMS104</option>
+            <option ng-option value="Web-Technology"></option>
+         </select>
+    <p>List of Country:<input type="text" ng-model="List of Country" placeholder="Choose your Country"</p>
+    <select name="country"  ng-model="User.Country" ng-dropdown required ng-change="changeme()">
+    <option ng-option value="INDIA">INDIA</option>
+            <option ng-option value="Austria">Austria</option>
+            <option ng-option value="Finland">Finland</option>
+            <option ng-option value="Netherland">Netherland</option>
+            <option ng-option value="Iceland">Iceland</option>
+        </select>
+        <p>
+            <label>Accept Terms & Conditions</label>
+ <input type="checkbox" value="" name="terms" ng-model="user.terms" ng-required="true" />
+ <p ng-show="userForm.terms.$error.required && (userForm.terms.$dirty || submitted)"</p>
+    </p>
+    <button type="submit" class="btn btn-primary">Register</button>
+
+
+    
+        
+        
+    </body>
+    </head>
+
+</html>
